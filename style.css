@@ -1,0 +1,436 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    max-width: 6000px;
+    
+}
+
+:root{
+    --main-color:#be9c79;
+    --black:#333;
+    --white:#fff;
+    --light-color:#666;
+    --border:.2rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+ }
+
+ *::selection{
+    background-color: var(--main-color);
+    color:var(--white);
+ }
+ 
+ ::-webkit-scrollbar{
+    height: .5rem;
+    width: 1rem;
+ }
+ 
+ ::-webkit-scrollbar-track{
+    background-color: transparent;
+ }
+ 
+ ::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+ }
+
+ html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+ }
+ 
+ /*start Navbar*/
+ 
+ .nav-link{
+    color: var(--main-color);
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0.5rem;
+ }
+ .nav-link:hover{
+    text-decoration: underline solid var(--black);
+    color: var(--black);
+   
+ }
+ 
+ /*start home*/
+ .card-img-overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 50rem;
+    width: 50%;
+ }
+.card-title{
+    color: var(--black);
+    font-size: 6rem;
+    text-transform: capitalize;
+    font-family: 'Merienda One', cursive;
+}
+.card-text{
+    display: flex;
+    width: 50%;
+    font-size: 1.2rem;
+}
+.btn{
+   width: 100px;
+   height: 40px;
+   color: #fff;
+   background: var(--main-color);
+  padding: 1rem;
+  font-size: 1.5rem;
+
+}
+.btn:hover{
+    
+    color: #fff;
+    background: var(--black);
+   
+    
+}
+/* end home*/
+.about{
+    display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap:4rem;
+
+}
+.content-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title-about{
+    color: var(--black);
+    font-size: 6rem;
+    text-transform: capitalize;
+    font-family: 'Merienda One', cursive;
+    text-align: center;
+}
+.about-img{
+    max-width: 100%;
+}
+.par-about{
+    width: 50%;
+    font-size: 1.5rem;
+  margin-right: 10rem;
+  margin-top: 1.5rem;
+}
+.content-about a{
+    display: flex;
+    margin-right: 10rem;
+    padding-left: 1.5rem;
+    background: var(--main-color);
+}
+.content-about a:hover{
+    background: var(--black);
+}
+.heading-img{
+   display: flex;
+   justify-content: center;
+ 
+}
+.heading-title{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.4rem;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Merienda One', cursive;
+    text-transform: capitalize;
+}
+.img-icon{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10rem;
+}
+.icon{
+    display: inline-flex;
+   margin: 7rem;
+   
+}
+.card{
+    border: none;
+  
+}
+.card-img-top {
+  max-width: 40%;
+}
+.card-title-about{
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+/*start menu*/
+.img-menu{
+    margin: 5rem;
+   
+}
+/*start team*/
+.img-team{
+    flex-direction: row;
+    margin: 1.5rem;
+}
+.name-team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+/*start conatc*/
+.contact-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+form{
+    width: 450px;
+    height: 350px;
+    border: var(--border);
+    padding: 2rem;
+  
+}
+input{
+   display: block;
+   margin-left: 12rem;
+   margin-top: 2.5rem;
+   width: 200px;
+   padding: 1rem;
+  background-color: #fff;
+ border: var(--border);
+ text-transform: capitalize;
+ font-size: 13px;
+    
+}
+.contact-us h3{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 500;
+}
+.btn-contact{
+    width: 200px;
+    height: 50px;
+    box-shadow: var(--box-shadow);
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    margin-top:1.5rem ;
+    margin-left: 12rem;
+    color: #fff;
+    padding: 1.5rem;
+    font-size: 13px;
+  text-transform: capitalize;
+
+}
+.btn-contact:hover{
+    text-decoration: none;
+    background-color: var(--black);
+    color: #fff;
+}
+
+
+
+/*start footer*/
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap:1.5rem;
+    align-items: flex-start;
+    margin-top: 10rem;
+ }
+ 
+ .footer .box-container .box{
+    text-align: center;
+ }
+ 
+ .footer .box-container .box i{
+    font-size: 2.5rem;
+    line-height: 6rem;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    color:var(--white);
+    margin-bottom: 1rem;
+ }
+ 
+ .footer .box-container .box h3{
+    margin:1rem 0;
+    font-size: 2rem;
+    color:var(--black);
+ }
+ 
+ .footer .box-container .box p{
+    line-height: 2;
+    font-size: 1.6rem;
+    color:var(--light-color);
+ }
+ 
+ .footer .credit{
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2.5rem;
+    border-top: var(--border);
+    font-size: 2rem;
+    color:var(--black);
+    /* padding-bottom: 7rem; */
+ }
+ 
+ .footer .credit span{
+    color:var(--main-color);
+ }
+ 
+ 
+ 
+ .btn-page{
+    display: flex;
+    justify-content: end;
+    margin-right: 1.5rem;
+    
+ }
+.up{
+    position:fixed;
+    bottom: 10px;
+    right: -100px;
+    background-color: var(--main-color);
+    font-size: 3rem;
+    width: 70px;
+    color: #fff;
+    text-align: center;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 2.5rem;
+    padding-top: 0.2rem;
+    cursor: pointer;
+    transition: 1s;
+    width: 50px;
+    height: 40px;
+
+}
+.up:hover{
+    background-color: var(--black);
+}
+ .up.show{
+    right: 10px;
+}
+
+
+ 
+
+
+/* media queries  */
+
+@media( max-width:767px ){
+   
+    .card-title{
+        font-size: 1.5rem;
+    }
+    .card-text{
+        width: 100%;
+        font-size: 0.8rem;
+
+    }
+    .btn{
+        font-size: 1rem;
+    }
+
+    .title-about{
+        font-size: 3rem;
+    }
+    .par-about{
+        width: 80%;
+       margin-right: 0rem;
+       margin-left: 5rem;
+    }
+    .content-about a{
+        margin-right: 0rem;
+        padding-left: 2.5rem;
+    }
+    .heading-img{
+        margin-top: 3.5rem;
+    }
+    .card-img-top {
+        max-width: 100%;
+     }
+     .footer .box-container .box{
+        margin-top: 10rem;
+     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width:768px ){
+    .card-title{
+        font-size: 1.5rem;
+    }
+    .card-text{
+        width: 65%;
+        font-size: 1.5rem;
+
+    }
+    .btn{
+        font-size: 1rem;
+    }
+
+    
+}
+
+@media( min-width:991px ){
+    .card-title{
+        font-size: 3rem;
+    }
+    .card-text{
+        width: 50%;
+        font-size: 1.5rem;
+
+    }
+    .btn{
+        font-size: 1.5rem;
+    }
+}
+@media( min-width:1200px ){
+    .card-title{
+        font-size: 6rem;
+    }
+    .card-text{
+        width: 50%;
+        font-size: 1.2rem;
+
+    }
+    .btn{
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
